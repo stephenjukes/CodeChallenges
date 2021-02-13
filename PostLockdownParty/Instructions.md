@@ -40,4 +40,4 @@ Carol              Alice
 
 After trying every other seating arrangement, you find that this one is the most optimal, with a total change in happiness of 330. 
  
-* What is the total change in happiness for the optimal seating arrangement of the actual guest list? 
+**What is the total change in happiness for the optimal seating arrangement of the actual guest list?**
