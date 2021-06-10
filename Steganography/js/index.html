@@ -1,0 +1,44 @@
+<html>
+    <body>
+        <script>
+            var imageSource = "./challenge.png";
+            var image = createImage(imageSource);
+
+            image.onload = function() { 
+                var ctx = createCanvasImage(this.height, this.width);
+                var imageData = ctx.getImageData(10, 10, 50, 50);
+                console.log(imageData);
+
+            } 
+
+            function createImage(source) {
+                var image = new Image;
+                image.src = source;
+
+                return image;
+            }
+
+            function createCanvasImage(height, width) {
+                var canvasId = "canvas";
+                createCanvas(canvasId, height, width);
+
+                var domCanvas = document.getElementById(canvasId);
+                var ctx = domCanvas.getContext("2d");
+                ctx.drawImage(image, 0, 0, width, height);
+
+                return ctx;
+            }
+
+            function createCanvas(id, height, width) {
+                var canvas = document.createElement("canvas");
+                canvas.id = id;
+                canvas.height = height;
+                canvas.width = width;
+                document.body.appendChild(canvas);
+            }
+
+        </script>
+    </body>
+
+    
+</html>

@@ -1,0 +1,54 @@
+#container {
+  text-align: center;
+  width: 800px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid gray;
+  margin: 5px 0;
+}
+
+header, canvas {
+  border-radius: 3px;
+}
+
+button, input {
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+button, #levels-label {
+  position: relative;
+}
+
+button::after, #levels-label::after {
+  position: absolute;
+  width: 100px;
+  text-align: left;
+  font-size: 14px;
+  left: 0px;
+  top: 45px;
+}
+
+#button5::after {
+  content: '2^(sides + 1) secs to render';
+}
+
+label, #buttons {
+  padding: 20px 40px 40px 20px;
+}
+
+label, span {
+  font-size: 24px;
+  font-family: Arial;
+}
+
+input {
+  width: 100px;
+}
+
