@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\JukesS\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\JukesS\\.nuget\\packages"
+    ]
+  }
+}

@@ -1,8 +1,8 @@
-﻿using System;
+﻿using NbsCodeChallenges.Utilities;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 
 namespace NbsCodeChallenges
 {
@@ -72,9 +72,9 @@ namespace NbsCodeChallenges
             for (var i = 1; i < sentence.Length; i++)
             {
                 var interval = (sentence[i] - sentence[i - 1]).TotalMilliseconds;
-                var standardisedInterval = (int)interval / unitInterval;
+                var unitBasedInterval = (int)interval / unitInterval;
 
-                var symbol = GetSymbol(standardisedInterval, i);
+                var symbol = GetSymbol(unitBasedInterval, i);
                 if (symbol != null) intervals.Add(symbol);
             }
 
