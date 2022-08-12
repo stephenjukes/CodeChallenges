@@ -73,7 +73,6 @@ namespace NbsCodeChallenges
                 RightMostIndex = Math.Max(city.Index, powerSources.Last())
             };
         }
-
         
         private static IEnumerable<IEnumerable<PowerSourceOption>> GetAllNetworkCandidates(IEnumerable<IEnumerable<PowerSourceOption>> factories)
         {
@@ -170,7 +169,7 @@ namespace NbsCodeChallenges
         public int RightMostIndex { get; set; }
     }
 
-    public static class ExtensionMethods
+    public static class FactoriesAndPowerplantsExtensionMethods
     {
         public static bool IsBetween(this int queried, int lower, int upper) => queried >= lower && queried < upper;
     }

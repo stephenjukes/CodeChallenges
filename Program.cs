@@ -1,6 +1,8 @@
 ﻿using NbsCodeChallenges.TheLift;
 using NbsCodeChallenges.LockdownParty;
+using NbsCodeChallenges.LongestPalindrome;
 using System;
+using NbsCodeChallenges.AdventOfCode2021;
 
 namespace NbsCodeChallenges
 {
@@ -9,8 +11,7 @@ namespace NbsCodeChallenges
         static void Main(string[] args)
         {
             // Invoke the static Run method on required class
-
-            MorseCode.Run();
+            Palindromes.Run();
         }
     }
 }
